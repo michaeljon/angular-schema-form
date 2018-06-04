@@ -4426,7 +4426,7 @@ FIXME: real documentation
 
   var createManualDirective = function createManualDirective(type, templateUrl, transclude) {
     transclude = __WEBPACK_IMPORTED_MODULE_0_angular___default.a.isDefined(transclude) ? transclude : false;
-    $compileProvider.directive('sf' + __WEBPACK_IMPORTED_MODULE_0_angular___default.a.uppercase(type[0]) + type.substr(1), function () {
+    $compileProvider.directive('sf' + type[0].toUpperCase() + type.substr(1), function () {
       return {
         restrict: 'EAC',
         scope: true,
